@@ -16,10 +16,28 @@ Please cite the paper as:
       }
 
 ## Introduction
-to do
+Given a graph with node features, how to tell if a graph neural network (GNN) can perform well on graph tasks or not? 
+How can we know what information (if any) is usable to the tasks, namely, link prediction and node classification?
+
+We propose NetInfoF, a framework to measure and exploit network usable information (NUI) in a given graph.
+It composed of two parts:
+1. **NetInfoF_Probe**: measures NUI of the given graph with NetInfoF_Score, and
+2. **NetInfoF_Act**: solves both the link prediction and node classification by sharing the same backbone with NetInfoF_Probe.
+
+In summary, NetInfoF has following advantages:
+1. **General**, handling both node classification and link prediction;
+2. **Principled**, with theoretical guarantee and closed-form solution;
+3. **Effective**, thanks to the proposed adjustment of node similarity;
+4. **Scalable**, scaling linearly with the input size.
+
+![image](https://github.com/mengchillee/Network-Usable-Info-Framework/assets/14501754/8efa88e0-2d2a-4c83-ad5e-ad223bb8a84a)
 
 ## Experiments
-to do
+NetInfoF is evaluated on 7 homophily and 5 heterophily real-world graphs, as well as 3 ogbl datasets.
+
+![image](https://github.com/mengchillee/Network-Usable-Info-Framework/assets/14501754/91604f3a-3c3f-462d-bf0d-45876855eac6)
+
+![image](https://github.com/mengchillee/Network-Usable-Info-Framework/assets/14501754/a93ca815-0095-4b58-911f-a08df11a7967)
 
 ## Usage
 

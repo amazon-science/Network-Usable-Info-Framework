@@ -49,11 +49,17 @@ NetInfoF is evaluated on 7 homophily and 5 heterophily real-world graphs, as wel
    
 `g++ -O3 -Wall -shared -std=c++11 -fPIC $(python3 -m pybind11 --includes) src/rwcpp.cpp -o src/rwcpp$(python3-config --extension-suffix)`
 
-3. Run code:
+3. Run NetInfoF:
 
 `bash run.sh`
 
+or
+
+`python src/main.py --dataset cora --hitK 100 --T 200 --print_probe True`
+
+
 ## Details
+The code in this repository currently only supports link prediction, and will be updated soon to support node classification.
 
 `src/main_ours.py`: is used to train NetInfoF.
 

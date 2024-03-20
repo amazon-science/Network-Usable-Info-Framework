@@ -19,7 +19,7 @@ Please cite the paper as:
 Given a graph with node features, how to tell if a graph neural network (GNN) can perform well on graph tasks or not? 
 How can we know what information (if any) is usable to the tasks, namely, link prediction and node classification?
 
-We propose NetInfoF, a framework to measure and exploit network usable information (NUI) in a given graph.
+We propose Network Usabel Info Framework (NetInfoF), a framework to measure and exploit network usable information (NUI) in a given graph.
 It composed of two parts:
 1. **NetInfoF_Probe**: measures NUI of the given graph with NetInfoF_Score, and
 2. **NetInfoF_Act**: solves both the link prediction and node classification by sharing the same backbone with NetInfoF_Probe.

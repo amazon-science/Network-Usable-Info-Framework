@@ -30,14 +30,14 @@ In summary, NetInfoF has following advantages:
 3. **Effective**, thanks to the proposed adjustment of node similarity;
 4. **Scalable**, scaling linearly with the input size.
 
-![image](https://github.com/mengchillee/Network-Usable-Info-Framework/assets/14501754/8efa88e0-2d2a-4c83-ad5e-ad223bb8a84a)
+<img src='./figures/f1.png' width=80%>
 
 ## Experiments
 NetInfoF is evaluated on 7 homophily and 5 heterophily real-world graphs, as well as 3 ogbl datasets.
 
-![image](https://github.com/mengchillee/Network-Usable-Info-Framework/assets/14501754/91604f3a-3c3f-462d-bf0d-45876855eac6)
+<img src='./figures/f2.png' width=80%>
 
-![image](https://github.com/mengchillee/Network-Usable-Info-Framework/assets/14501754/a93ca815-0095-4b58-911f-a08df11a7967)
+<img src='./figures/f3.png' width=80%>
 
 ## Usage
 

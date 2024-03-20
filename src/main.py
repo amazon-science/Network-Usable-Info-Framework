@@ -1,3 +1,19 @@
+"""
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License").
+You may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+"""
+
 import argparse
 import io
 from distutils.util import strtobool
@@ -95,8 +111,8 @@ def parse_args():
     parser.add_argument('--max_epochs', type=int, default=100)
     parser.add_argument('--patience', type=int, default=5)
     parser.add_argument('--lr', type=float, default=0.1)
-    parser.add_argument('--T', type=int, default=200)
-    parser.add_argument('--print_probe', type=str2bool, default=False)
+    parser.add_argument('--T', type=int, default=200, help='number of random walk trials for neighborhood embedding')
+    parser.add_argument('--print_probe', type=str2bool, default=False, help='print the results of NetInfoF_Probe')
     parser.add_argument('--gpu', type=int, default=0)
     parser.add_argument('--seed', type=int, default=0)
     return parser.parse_args()

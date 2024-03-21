@@ -59,7 +59,7 @@ or
 
 
 ## Details
-The code in this repository currently only supports link prediction, and will be updated soon to support node classification.
+The code in this repository focuses on solving link prediction.
 
 `src/main_ours.py`: is used to train NetInfoF.
 

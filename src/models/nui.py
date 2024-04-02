@@ -19,6 +19,20 @@ import torch
 from sklearn.preprocessing import KBinsDiscretizer
 
 
+def conditional_entropy(X):
+    n = X.sum()
+    m, c = X.shape
+    ce = 0
+    for i in range(m):
+        pi = X[i].sum() / n
+        for j in range(c):
+            pij = X[i][j] / n
+            if pij == 0:
+                continue
+            ce += - pij * np.log2(pij / pi)
+    return ce
+
+
 def accuracy(X):
     n = X.sum()
     acc = 0
